@@ -5,6 +5,91 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Formulario de Productos en Stock</title>
 <link rel="stylesheet" type="text/css" href="estilos.css">
+<style>
+.container {
+  width: 40%; /* Misma anchura que el formulario */
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.header-box {
+  background-color: #f8f9fa;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.header-box h1 {
+  margin: 0;
+  color: #007bff;
+}
+
+/* Otros estilos del formulario que ya tenías */
+form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea,
+input[type="date"],
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #000000;
+}
+
+/* Estilos adicionales */
+h1 {
+  text-align: center;
+  color: #000000;
+  font-size: xx-large;
+}
+
+/* Estilos para alinear el botón */
+form input[type="submit"] {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+body {
+  background-image: url('nombre_de_tu_imagen.jpg'); /* Reemplaza 'nombre_de_tu_imagen.jpg' con la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Esto fija la imagen de fondo */
+}
+</style>
 </head>
 <body>
   <div class="container">
