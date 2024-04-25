@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #00ff00; /* Verde */
+}
+
+.container {
+    border: 4px solid #000000; /* Borde verde */
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; /* Ajusta la distancia desde la parte superior */
+    background-color: #ffffff; /* Blanco */
+}
+
+.message-box {
+    border: 4px solid #00ff00;
+    background-color: #ffffff; /* Verde */
+    color: #000000; /* Negro */
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    border-radius: 10px;
+    text-align: center;
+    color: #000000;
+}
+
+.links {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; /* Ajusta la distancia desde la parte superior */
+    color: #ffffff; /* Blanco */
+}
+
+.links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000000; /* Negro */
+}
+
+.links a:hover {
+    color: #ff0000; /* Rojo */
+}
