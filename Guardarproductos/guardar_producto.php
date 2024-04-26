@@ -57,6 +57,10 @@ if (isset($_FILES["Fotos"]) && $_FILES["Fotos"]["error"] === UPLOAD_ERR_OK) {
     $product_saved = false; // Indica que no se subió ninguna foto
 }
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // Prepara la consulta SQL para insertar los datos en la base de datos
 $sql = "INSERT INTO productos1 (Nombre_del_producto, Precio_Unitario, Precio_Pack, Tipo, Fecha_compra, Olor, Color, Descripcion, Fotos, id)
         VALUES ('$Nombre_del_producto', '$Precio_Unitario', '$Precio_Pack', '$Tipo', '$Fecha_compra', '$Olor', '$Color', '$Descripcion', '$Fotos', '$id')";
