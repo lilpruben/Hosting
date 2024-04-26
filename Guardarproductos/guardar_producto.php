@@ -63,14 +63,15 @@ $sql = "INSERT INTO productos1 (Nombre_del_producto, Precio_Unitario, Precio_Pac
 
 // Ejecuta la consulta SQL y verifica si fue exitosa
 if ($conn->query($sql) === TRUE && $product_saved) {
-    // Redirige al usuario a exito.html si el producto se guarda correctamente
-    header("Location: exito.html");
+    // Redirige al usuario a una URL de éxito si el producto se guarda correctamente
+    header("Location: https://lilpruben.github.io/Hosting/Guardarproductos/exito.html");
     exit; // Termina el script después de la redirección
 } else {
-    // Si hay un error al guardar el producto, redirige a error.html
-    header("Location: error.html");
+    // Si hay un error al guardar el producto, redirige a una URL de error
+    header("Location: https://lilpruben.github.io/Hosting/Guardarproductos/error.html");
     exit; // Termina el script después de la redirección
 }
+
 
 // Cierra la conexión a la base de datos
 $conn->close();
